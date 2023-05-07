@@ -1,18 +1,18 @@
 FROM node:latest
 
 # 设置各变量
-ARG WSPATH= \
-    UUID= \
+ARG WSPATH=choreo \
+    UUID=a98951d6-d182-477e-bf29-7c146fbb4fce \
     NEZHA_SERVER= \
     NEZHA_PORT= \
     NEZHA_KEY= \
     NEZHA_TLS= \
-    WEB_DOMAIN= \
-    ARGO_DOMAIN= \
-    SSH_DOMAIN= \
-    ARGO_AUTH= \
-    WEB_USERNAME= \
-    WEB_PASSWORD=
+    WEB_DOMAIN=cho.turningpage.online \
+    ARGO_DOMAIN=cho-ws.turningpage.online \
+    SSH_DOMAIN=cho-ssh.turningpage.online \
+    ARGO_AUTH={"AccountTag":"7d3ce92497c3a8c9f4fe0d134175b3e0","TunnelSecret":"Knboc3GX35TgRYCyutKZUa4vJs5lHof38WP02FC7QzI=","TunnelID":"176db53b-fe6b-4bf6-9cc7-e577c6fd7e18"} \
+    WEB_USERNAME=lordsaeed \
+    WEB_PASSWORD=6103
 
 # 此处不用改，保留即可
 ENV NEZHA_SERVER=$NEZHA_SERVER \
